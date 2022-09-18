@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,31 +43,58 @@
                                     <constraint firstItem="070-VA-v7m" firstAttribute="centerY" secondItem="eae-sW-UTK" secondAttribute="centerY" id="ybU-4m-A2b"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4H-gc-tAU" userLabel="detailView">
+                                <rect key="frame" x="8" y="522" width="398" height="320"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="rMo-OV-AYa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rMo-OV-AYa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="rMo-OV-AYa"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Z4H-gc-tAU" firstAttribute="top" secondItem="eae-sW-UTK" secondAttribute="bottom" id="05p-bj-mlS"/>
                             <constraint firstItem="eae-sW-UTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="2N2-Xf-CIn"/>
                             <constraint firstItem="eae-sW-UTK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2WB-un-4jc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eae-sW-UTK" secondAttribute="bottom" constant="20" id="3Ag-U6-XbK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eae-sW-UTK" secondAttribute="trailing" constant="8" id="Ghc-Nu-mol"/>
                             <constraint firstItem="eae-sW-UTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="HKC-0r-ESB"/>
+                            <constraint firstItem="Z4H-gc-tAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="IYV-MD-Lf8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z4H-gc-tAU" secondAttribute="bottom" constant="20" id="Izk-zP-xP3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eae-sW-UTK" secondAttribute="trailing" constant="8" id="KFg-eT-fDD"/>
                             <constraint firstItem="eae-sW-UTK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QGB-fb-5hx"/>
                             <constraint firstItem="eae-sW-UTK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QZQ-o5-qcg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eae-sW-UTK" secondAttribute="trailing" constant="8" id="Qyl-SP-Z2T"/>
+                            <constraint firstItem="Z4H-gc-tAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="REn-Lb-B4w"/>
                             <constraint firstItem="eae-sW-UTK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.502249" id="SGC-ri-wqU"/>
                             <constraint firstItem="eae-sW-UTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Vhy-mm-27R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eae-sW-UTK" secondAttribute="bottom" constant="20" id="XzC-5H-JCH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z4H-gc-tAU" secondAttribute="trailing" constant="20" id="YH2-fX-6dp"/>
+                            <constraint firstItem="Z4H-gc-tAU" firstAttribute="top" secondItem="eae-sW-UTK" secondAttribute="bottom" constant="8" symbolic="YES" id="gtm-OE-ykx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z4H-gc-tAU" secondAttribute="trailing" constant="8" id="iVP-BD-ukd"/>
                             <constraint firstItem="eae-sW-UTK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oRR-2T-Vkd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="3Ag-U6-XbK"/>
                                 <exclude reference="Ghc-Nu-mol"/>
+                                <exclude reference="Izk-zP-xP3"/>
                                 <exclude reference="KFg-eT-fDD"/>
                                 <exclude reference="Qyl-SP-Z2T"/>
                                 <exclude reference="XzC-5H-JCH"/>
+                                <exclude reference="YH2-fX-6dp"/>
+                                <exclude reference="iVP-BD-ukd"/>
                                 <exclude reference="2N2-Xf-CIn"/>
                                 <exclude reference="2WB-un-4jc"/>
                                 <exclude reference="HKC-0r-ESB"/>
@@ -74,6 +102,10 @@
                                 <exclude reference="QZQ-o5-qcg"/>
                                 <exclude reference="SGC-ri-wqU"/>
                                 <exclude reference="Vhy-mm-27R"/>
+                                <exclude reference="05p-bj-mlS"/>
+                                <exclude reference="IYV-MD-Lf8"/>
+                                <exclude reference="REn-Lb-B4w"/>
+                                <exclude reference="gtm-OE-ykx"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -88,23 +120,30 @@
                             <mask key="constraints">
                                 <include reference="3Ag-U6-XbK"/>
                                 <include reference="KFg-eT-fDD"/>
+                                <include reference="YH2-fX-6dp"/>
                                 <include reference="HKC-0r-ESB"/>
                                 <include reference="QZQ-o5-qcg"/>
+                                <include reference="05p-bj-mlS"/>
+                                <include reference="REn-Lb-B4w"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="Ghc-Nu-mol"/>
+                                <include reference="Izk-zP-xP3"/>
+                                <include reference="iVP-BD-ukd"/>
                                 <include reference="2N2-Xf-CIn"/>
                                 <include reference="QGB-fb-5hx"/>
                                 <include reference="SGC-ri-wqU"/>
+                                <include reference="IYV-MD-Lf8"/>
+                                <include reference="gtm-OE-ykx"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="6"/>
+            <point key="canvasLocation" x="-228" y="20"/>
         </scene>
     </scenes>
     <resources>

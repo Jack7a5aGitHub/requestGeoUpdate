@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         if #available(iOS 16, *) {
             DispatchQueue.main.async {
-                let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                let windowScene = self.view.window?.windowScene
                 let orientation = windowScene?.interfaceOrientation
                 self.setNeedsUpdateOfSupportedInterfaceOrientations()
                 self.navigationController?.setNeedsUpdateOfSupportedInterfaceOrientations()
